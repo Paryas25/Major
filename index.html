@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Enter city name">
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="weather-info">
+            <div class="weather-img">
+                <img src="images/clouds.png" id="weather-img">
+            </div>
+            <div class="weather-temp">
+                <h2 id="temp">22°C</h2>
+                <h3 id="city-name">London</h3>
+            </div>
+        </div>
+        <div class="weather-forecast">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-container" id="forecast-container">
+                <!-- Forecast cards will be added here -->
+            </div>
+        </div>
+        
+        <!-- New section for pollution forecast -->
+        <div class="pollution-forecast">
+            <h3>Air Quality Forecast</h3>
+            <div class="pollution-cards-container" id="pollution-container">
+                <!-- Pollution forecast cards will be added here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

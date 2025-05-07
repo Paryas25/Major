@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    padding: 40px 35px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.weather-img {
+    margin-right: 20px;
+}
+
+.weather-img img {
+    width: 120px;
+}
+
+.weather-temp h2 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.weather-temp h3 {
+    font-size: 25px;
+}
+
+.weather-forecast {
+    margin-top: 20px;
+}
+
+.weather-forecast h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.forecast-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: calc(20% - 8px);
+    min-width: 75px;
+}
+
+.forecast-card img {
+    width: 40px;
+    margin: 5px 0;
+}
+
+.forecast-date, .forecast-temp {
+    font-size: 14px;
+}
+
+/* Pollution Forecast Styles */
+.pollution-forecast {
+    margin-top: 30px;
+}
+
+.pollution-forecast h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.pollution-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pollution-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: calc(33.33% - 8px);
+    min-width: 90px;
+}
+
+.pollution-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.pollution-aqi {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.aqi-good {
+    background-color: rgba(168, 224, 95, 0.8);
+    color: #33691e;
+}
+
+.aqi-fair {
+    background-color: rgba(255, 213, 79, 0.8);
+    color: #f57f17;
+}
+
+.aqi-moderate {
+    background-color: rgba(255, 183, 77, 0.8);
+    color: #e65100;
+}
+
+.aqi-poor {
+    background-color: rgba(239, 83, 80, 0.8);
+    color: #b71c1c;
+}
+
+.aqi-very-poor {
+    background-color: rgba(156, 39, 176, 0.8);
+    color: white;
+}
+
+.pollution-details {
+    text-align: left;
+}
+
+.pollutant {
+    margin: 5px 0;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pollutant span {
+    font-weight: 500;
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .weather-img img {
+        width: 100px;
+    }
+
+    .weather-temp h2 {
+        font-size: 40px;
+    }
+
+    .weather-temp h3 {
+        font-size: 20px;
+    }
+
+    .forecast-card {
+        width: calc(50% - 5px);
+    }
+
+    .pollution-card {
+        width: calc(100% - 0px);
+    }
+}
+
+@media (max-width: 350px) {
+    .forecast-card {
+        width: 100%;
+    }
+}
